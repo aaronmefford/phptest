@@ -1,6 +1,14 @@
 <?php
 require_once('lib/Chat.php');
 class ChatTest extends PHPUnit_Framework_TestCase {
+  public function testCreateClient(){
+    $chat = new Chat();
+    $client1 = $chat->createClient("bob");
+  }
+  public function testCreateChatroom(){
+    $chat = new Chat();
+    $room = $chat->createChatroom("bob");
+  }
   public function testSimpleMessaging(){
     $chat = new Chat();
     $client1 = $chat->createClient("bob");

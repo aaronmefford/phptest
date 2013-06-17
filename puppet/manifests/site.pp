@@ -10,7 +10,7 @@ file { "/var/www":
   ensure => directory,
   owner => "apache",
   group => "apache",
-  mode => 0755",
+  mode => 0755,
 }
 
 file{ "/var/www/sites":
